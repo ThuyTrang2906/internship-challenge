@@ -8,41 +8,7 @@
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap"
             rel="stylesheet"
         />
-
-        <style type="text/css">
-            body {
-                padding: 0;
-                margin: 0;
-                font-family: "Roboto", sans-serif;
-                min-height: 100vh;
-            }
-            footer {
-                background-color: rgb(57, 90, 210);
-                padding: 16px 8px;
-                color: white;
-            }
-            main {
-                margin: 16px;
-            }
-            table {
-                border-collapse: collapse;
-                width: 100%;
-            }
-            table td,
-            table th {
-                border: 1px solid #ddd;
-                padding-left: 4px;
-                padding-right: 4px;
-            }
-            table th {
-                text-align: left;
-            }
-            span.Manabie__quote {
-                background-color: #cccccc;
-                padding-left: 4px;
-                padding-right: 4px;
-            }
-        </style>
+        <link rel="stylesheet" href="./styte.css">
     </head>
 
     <body>
@@ -118,5 +84,12 @@
             cellStatus.innerHTML = "Good";
         }
         addNewCellInTable();
+    </script>
+
+    <script>
+        const api_url = 'https://zwxiws.sse.codesandbox.io';
+        const response = fetch(api_url);
+        var data = response.json();
+        console.log(data);
     </script>
 </html>
