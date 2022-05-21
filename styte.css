@@ -48,7 +48,11 @@ h1:hover {
 
 #Manabie__footer {
     width:100%;
-    position:absolute;
     bottom:0;
     left:0;
+}
+
+.table {
+    background-color:skyblue;
+    height: 40px;
 }
